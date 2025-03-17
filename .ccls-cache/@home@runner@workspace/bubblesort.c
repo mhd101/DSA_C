@@ -7,12 +7,13 @@ int main() {
   int N = 5;
 
   for (int i = 0; i < N; i++) {
-    int min = i;
+    int min = i; // tracking minimum element
     for (int j = i + 1; j < N; j++) {
       if (arr[min] > arr[j]) {
-        min = j;
+        min = j; // updating minimum element
       }
     }
+    // swapping
     int temp = arr[i];
     arr[i] = arr[min];
     arr[min] = temp;
