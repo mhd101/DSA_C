@@ -20,12 +20,6 @@ void add_at_end(struct node *head, int data){
   }
   ptr->link = temp;
 
-  // printing
-  while(ptr != NULL){
-      printf("%d ", ptr->data);
-      ptr = ptr->link;
-    }
-
 }
 
 int main() {
@@ -48,6 +42,13 @@ int main() {
   head->link->link = current;
 
   add_at_end(head,4);
+
+  struct node *ptr = NULL;
+    ptr = head;
+    while(ptr != NULL){
+      printf("%d ", ptr->data);
+      ptr = ptr->link;
+    }
   
   return 0;
 }
