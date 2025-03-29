@@ -6,16 +6,22 @@
 //   struct node *link;
 // };
 
-// struct node* add_at_beg(struct node *head, int data){
+// void add_at_random(struct node *head, int data, int pos){
 
-//   struct node *ptr = malloc(sizeof(struct node));
-//   ptr->data = data;
-//   ptr->link = NULL;
+//   struct node *temp = malloc(sizeof(struct node));
+//   temp->data = data;
+//   temp->link = NULL;
 
-//   ptr->link = head;
-//   head = ptr;
-//   return head;
+//   struct node *ptr = head;
 
+//   pos--;
+//   while(pos != 1){
+//     ptr = ptr->link;
+//     pos--;
+//   }
+//   temp->link = ptr->link;
+//   ptr->link = temp;
+  
 // }
 
 // int main() {
@@ -38,7 +44,7 @@
 //   head->link->link = current;
 
 //   // inserting element at the beginning
-//   head = add_at_beg(head,0);
+//   add_at_random(head,0,3);
 
 //   struct node *ptr = NULL;
 //     ptr = head;
