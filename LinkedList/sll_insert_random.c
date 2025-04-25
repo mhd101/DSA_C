@@ -44,7 +44,7 @@
 //   head->link->link = current;
 
 //   // inserting element at the beginning
-//   add_at_random(head,0,3);
+//   add_at_random(head,0,1);
 
 //   struct node *ptr = NULL;
 //     ptr = head;

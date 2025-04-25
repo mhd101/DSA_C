@@ -45,7 +45,7 @@
 //   current->link = NULL;
 //   head->link->link = current;
 
-//   // deleting element at the beginning
+//   // deleting element at the end
 //   del_at_end(head);
 
 //   struct node *ptr = NULL;
