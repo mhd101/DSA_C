@@ -6,23 +6,6 @@ struct node {
   struct node *link;
 };
 
-// struct node* reverse(struct node *head){
-//  struct node *curr, *prev, *next;
-//   next = head->link;
-//   curr = head;
-//   prev = NULL;
-//   // iterating through linked list
-//   while(next != NULL){
-//     // store next element 
-//     curr->link = prev;
-//     prev = curr;
-//     curr = next;
-//     next = next->link;
-//   }
-//   curr->link = prev;
-//   head = curr;
-//   return head;
-// }
 
 struct node* reverse(struct node *head){
   struct node *curr, *prev, *next;
